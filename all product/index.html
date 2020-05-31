@@ -1,0 +1,2392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USport Products</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid" style="position: sticky; top:0%; z-index: 1000;">
+        <div class="row" style="background-color:black ;  ">
+            <nav class="navbar navbar-default " style="background-color:black;margin-bottom: 1px; border:1px solid black;">
+                <div class="col-md-4">
+
+                    <div class="navbar-header">
+
+                        <button style="margin-top: 15px;" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
+                               
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                        </button>
+                        <p class="navbar-brand" style="color: ivory; font-size: 18px;">Umair Sports</p>
+                    </div>
+                </div>
+                <div id="collapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav" style="text-align: center; margin-top: 5px;">
+                        <li class="nav-item"> <a href="../index.html" class="nav-link" id="listcolor">HOME</a></li>
+
+                        <li class="dropdown" class="nav-item" id="box">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" class="nav-link">
+                        PRODUCT<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="index.html#cricket" target="_self" id="inner">ALL CRICKET PRODUCTS</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#football" target="_self" id="inner">ALL FOOTBALL PRODUCTS</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#basketball" target="_self" id="inner">ALL BASKETBALL PRODUCT</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#baseball" target="_self" id="inner">ALL BASEBALL PRODUCT</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#badminton" target="_self" id="inner">ALL BADMINTON PRODUCTS</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" class="nav-item"><a href="#" class="nav-link" class="dropdown-toggle" data-toggle="dropdown" id="listcolor">SERVICES<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="services/index.html#ds" id="inner">DELEIVERY SERVICE</a>
+                                </li>
+                                <li>
+                                    <a href="services/index.html#rp" id="inner">RETURN POLICY SERVICE</a>
+                                </li>
+                                <li>
+                                    <a href="services/index.html#es" id="inner">EXCHANGE SERVICE</a>
+                                </li>
+                                <li>
+                                    <a href="services/index.html#op" id="inner">ONLINE PAYMENT</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="services/Contact us/index.html" class="nav-link" id="listcolor">CONTACT</a></li>
+                        <li class="nav-item"><a href="services/Contact us/about us/index.html" class="nav-link" id="listcolor">ABOUT</a></li>
+                        <li><a href="#" id="listcolor" data-toggle="modal" data-target="#signupModal"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>
+                        <li><a href="#" id="listcolor" data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> login</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <!--login modal-->
+    <div class="modal fade" id="loginModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title" style="text-align: center; font-weight: bold;">Login Form</h4>
+
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body" style="text-align: center; background-color: lightblue;">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <input type="text" placeholder="Enter your username">
+                    <br>
+                    <br>
+                    <span class="glyphicon glyphicon-lock"></span>
+                    <input type="password" placeholder="Enter your password">
+                    <br>
+                    <br>
+                    <button class="btn btn-info" style="width: 150px; ">Log in</button>
+                    <h5>OR</h5>
+                    <button class="btn btn-primary" style="width: 150px;">Facebook</button>
+                    <br>
+                    <br>
+                    <button class="btn btn-danger" style="width: 150px;">Gmail</button>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--sign up modal-->
+
+
+    <div class="modal fade" id="signupModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title" style="text-align: center; font-weight: bold;">Sign up Form</h4>
+
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body" style="text-align: center; background-color: lightblue;">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <input type="text" placeholder="Enter your username">
+                    <br>
+                    <br>
+                    <span class="glyphicon glyphicon-lock"></span>
+                    <input type="password" placeholder="Enter your password">
+                    <br>
+                    <br>
+                    <span class="glyphicon glyphicon-lock"></span>
+                    <input type="password" placeholder="Re-enter your password">
+                    <br>
+                    <br>
+                    <span class="glyphicon glyphicon-envelope"></span>
+                    <input type="password" placeholder="Enter your email">
+                    <br>
+                    <br>
+                    <button class="btn btn-info" style="width: 150px; ">Sign up</button>
+                    <h5>OR</h5>
+                    <button class="btn btn-primary" style="width: 150px;">Facebook</button>
+                    <br>
+                    <br>
+                    <button class="btn btn-danger" style="width: 150px;">Gmail</button>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--CRICKET-->
+
+
+
+
+
+
+
+    <br>
+    <br>
+    <div class="container-fluid" style="background-color:black ;">
+        <div class="row">
+            <h1 id="cricket" style="text-align: center; font-weight: bold; color: ivory;"><ins>CRICKET PRODUCTS</ins></h1>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="cball.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Stunning Ball</h3>
+                    <p class="card-text">Leather Body <br> Rs:800/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="cball2.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Kirmish Ball</h3>
+                    <p class="card-text">Rubber Body <br> Rs:200/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="cball3.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Cricket Ball</h3>
+                    <p class="card-text">Rubber and Leather<br> Rs:600/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="cball4.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Rubber Ball</h3>
+                    <p class="card-text">Rubber Body<br> Rs:100/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="cbat.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">BoomBoom Bat</h3>
+                    <p class="card-text">Hard Wood Body<br> Rs:1500/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="cglooves2.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Glooves</h3>
+                    <p class="card-text">Leather body<br> Rs:500/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--new arrival 2-->
+
+
+
+
+
+
+
+    <div class="container-fluid" style="background-color:black;">
+        <div class="row">
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="cgloves.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Glooves</h3>
+                    <p class="card-text">Rubber Body<br> Rs:600/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="cgloves3.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Glooves</h3>
+                    <p class="card-text">Leather Body <br> Rs:700/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="chelmet.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Helmet</h3>
+                    <p class="card-text">Full Hard <br> Rs:2000/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="cpads.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Rubber Pads</h3>
+                    <p class="card-text">light Body<br> Rs:700/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="cpads2.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Cricket Pads</h3>
+                    <p class="card-text">Hard Rubber Body<br> Rs:1000/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close <span class="glyphicon glyphicon-shopping-cart"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="cpads3.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Cricket Pads</h3>
+                    <p class="card-text">Pure leather <br> Rs:1200/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+
+
+
+
+
+
+
+            <!--new arrival 3-->
+
+
+
+
+
+            <div class="container-fluid" style="background-color:black ;">
+                <div class="row">
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="cshirt.jpg">
+                        <div class="card-body">
+                            <h3 class="card-title">Cricket Shirt</h3>
+                            <p class="card-text">Cotton<br> Rs:500/=</p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Order detail</h4>
+
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <p>Your order has been in cart &#128522</p>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="cshirt3.jpg">
+                        <div class="card-body">
+                            <h3 class="card-title">Cricket Shirt</h3>
+                            <p class="card-text">Light cloth<br> Rs:300/=</p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Order detail</h4>
+
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <p>Your order has been in cart &#128522</p>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="cshirts2.jpg">
+                        <div class="card-body">
+                            <h3 class="card-title">Sport Shirt</h3>
+                            <p class="card-text">Cotton<br> Rs:600/=</p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Order detail</h4>
+
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <p>Your order has been in cart &#128522</p>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="ctrouser.jpg">
+                        <div class="card-body">
+                            <h3 class="card-title">Trouser</h3>
+                            <p class="card-text">Cotton<br> Rs:700/=</p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Order detail</h4>
+
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <p>Your order has been in cart &#128522</p>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="ctrouser2.jpg">
+                        <div class="card-body">
+                            <h3 class="card-title">Cricket Trouser</h3>
+                            <p class="card-text">Warm body<br> Rs:1000/=</p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Order detail</h4>
+
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <p>Your order has been in cart &#128522</p>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close <span class="glyphicon glyphicon-shopping-cart"></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="ctrouser3.jpg">
+                        <div class="card-body">
+                            <h3 class="card-title">Cricket Trouser</h3>
+                            <p class="card-text">Pure Cotton<br> Rs:800/=</p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Order detail</h4>
+
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <p>Your order has been in cart &#128522</p>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!--Footall-->
+
+
+
+
+
+    <br>
+    <br>
+    <div class="container-fluid" style="background-color:black ;">
+        <div class="row">
+            <h1 id="football" style="text-align: center; font-weight: bold; color: ivory;"><ins>FOOTBALL PRODUCTS</ins></h1>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="fball.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">FootBall</h3>
+                    <p class="card-text">Leather Body <br> Rs:1400/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="fball2.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">FootBall</h3>
+                    <p class="card-text">Rubber Body <br> Rs:800/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="fball3.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Squash Ball</h3>
+                    <p class="card-text">Hard Body<br> Rs:1000/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="fball4.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Squash Ball</h3>
+                    <p class="card-text">Rubber Body<br> Rs:700/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="fball5.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Branded Ball</h3>
+                    <p class="card-text">Hard Leather Body<br> Rs:2000/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="fcloth.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Football Clothes</h3>
+                    <p class="card-text">Cotton body<br> Rs:1000/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--new arrival 2-->
+
+
+
+
+
+
+
+    <div class="container-fluid" style="background-color:black;">
+        <div class="row">
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="fglooves.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Glooves</h3>
+                    <p class="card-text">Rubber Body<br> Rs:600/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="fglooves2.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Glooves</h3>
+                    <p class="card-text">Leather Body <br> Rs:700/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="fhelmet.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Goal Helmet</h3>
+                    <p class="card-text">Hard Body <br> Rs:2000/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="fnet.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Practice Net</h3>
+                    <p class="card-text">Flexible Net<br> Rs:4000/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="fpaini.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">FootBall Painani</h3>
+                    <p class="card-text">Cotton Pack<br> Rs:1000/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close <span class="glyphicon glyphicon-shopping-cart"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="fshirt.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">FootBall Shirt</h3>
+                    <p class="card-text">Warm Shirt<br> Rs:400/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+
+
+
+
+
+
+
+            <!--new arrival 3-->
+
+
+
+
+
+            <div class="container-fluid" style="background-color:black ;">
+                <div class="row">
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="fshirt2.jpg">
+                        <div class="card-body">
+                            <h3 class="card-title">Messi Shirt</h3>
+                            <p class="card-text">Cotton<br> Rs:500/=</p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Order detail</h4>
+
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <p>Your order has been in cart &#128522</p>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="fshirt3.jpg">
+                        <div class="card-body">
+                            <h3 class="card-title">Branded Shirt</h3>
+                            <p class="card-text">Light cloth<br> Rs:300/=</p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Order detail</h4>
+
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <p>Your order has been in cart &#128522</p>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="fshoes.jpg">
+                        <div class="card-body">
+                            <h3 class="card-title">Soccer Shoes</h3>
+                            <p class="card-text">Leather<br> Rs:1200/=</p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Order detail</h4>
+
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <p>Your order has been in cart &#128522</p>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="fshoes3.jpg">
+                        <div class="card-body">
+                            <h3 class="card-title">Soccer Shoes</h3>
+                            <p class="card-text">Hard Leather<br> Rs:1000/=</p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Order detail</h4>
+
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <p>Your order has been in cart &#128522</p>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="fshoes2.jpg">
+                        <div class="card-body">
+                            <h3 class="card-title">Joggers</h3>
+                            <p class="card-text">Warm body<br> Rs:800/=</p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Order detail</h4>
+
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <p>Your order has been in cart &#128522</p>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close <span class="glyphicon glyphicon-shopping-cart"></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="ftrophy.jpg">
+                        <div class="card-body">
+                            <h3 class="card-title">Artificial Trophy</h3>
+                            <p class="card-text">Pure Steel<br> Rs:2000/=</p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Order detail</h4>
+
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <p>Your order has been in cart &#128522</p>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--Bascket Ball-->
+
+
+
+
+    <br>
+    <br>
+    <div class="container-fluid" style="background-color:black ;">
+        <div class="row">
+            <h1 id="basketball" style="text-align: center; font-weight: bold; color: ivory;"><ins>BASKETALL PRODUCTS</ins></h1>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="bball.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Basket Ball</h3>
+                    <p class="card-text">Leather Body <br> Rs:1000/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="bball2.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Branded Ball</h3>
+                    <p class="card-text">Rubber Body <br> Rs:800/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="bball3.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Stunning Ball</h3>
+                    <p class="card-text">Rubber and Leather<br> Rs:800/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="bdouble net.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Double Net</h3>
+                    <p class="card-text">Rubber Body<br> Rs:1500/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="bgrip.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Ball Grip Band</h3>
+                    <p class="card-text">Leather<br> Rs:500/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="bnet.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Practice Net</h3>
+                    <p class="card-text">Leather<br> Rs:800/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--new arrival 2-->
+
+
+
+
+
+
+
+    <div class="container-fluid" style="background-color:black;">
+        <div class="row">
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="bnet2.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Practice Net</h3>
+                    <p class="card-text">Rubber Body<br> Rs:600/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="brack.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Basket Rack</h3>
+                    <p class="card-text">Steel Body<br> Rs:2000/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="bres.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Resistant Band</h3>
+                    <p class="card-text">Flexible<br> Rs:500/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="bresistanceband.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">All Bands</h3>
+                    <p class="card-text">Flexible Equipment<br> Rs:1200/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="bshort.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Player Shorts</h3>
+                    <p class="card-text">Cotton<br> Rs:400/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close <span class="glyphicon glyphicon-shopping-cart"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="btouchup spray.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">TouchUp Spray</h3>
+                    <p class="card-text">Liquid<br> Rs:900/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+
+        </div>
+    </div>
+
+
+
+
+    <!--Base Ball-->
+
+
+
+
+    <br>
+    <br>
+    <div class="container-fluid" style="background-color:black ;">
+        <div class="row">
+            <h1 id="baseball" style="text-align: center; font-weight: bold; color: ivory;"><ins>BASEBALL PRODUCTS</ins></h1>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="aball.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">BaseBall</h3>
+                    <p class="card-text">Hard Body <br> Rs:800/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="abat.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">BaseBall Bat</h3>
+                    <p class="card-text">Hard Wooden Body<br> Rs:1600/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="agloove.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Base Glooves</h3>
+                    <p class="card-text">Leather<br> Rs:1000/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="aball2.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">BaseBall</h3>
+                    <p class="card-text">Rubber Body<br> Rs:700/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="acap.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">BaseBall Cap</h3>
+                    <p class="card-text">Steel Body<br> Rs:1500/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="ahelmet.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Practice Helmet</h3>
+                    <p class="card-text">Hard Steel<br> Rs:1800/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--BADMINTON-->
+
+
+
+    <br>
+    <br>
+    <div class="container-fluid" style="background-color:black ;">
+        <div class="row">
+            <h1 id="badminton" style="text-align: center; font-weight: bold; color: ivory;"><ins>BADMINTON PRODUCTS</ins></h1>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="bad1.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Racket</h3>
+                    <p class="card-text"> Hard Plastic<br> Rs:1000/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="bad2.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Branded Racket</h3>
+                    <p class="card-text">Rubber Body<br> Rs:1200/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="bad3.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Stunning Shuttle</h3>
+                    <p class="card-text">Eagle body<br> Rs:400/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="bad4.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Pack Of 3</h3>
+                    <p class="card-text">Shuttle<br> Rs:1000/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="bad5.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Badminton Net</h3>
+                    <p class="card-text">Leather<br> Rs:1500/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="bad6.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Racket String</h3>
+                    <p class="card-text">Hard Rubber<br> Rs:300/=</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add to cart <span class="glyphicon glyphicon-shopping-cart"></span></a>
+                    <!-- The Modal -->
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Order detail</h4>
+
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>Your order has been in cart &#128522</p>
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <!--FOOTER-->
+
+    <div class="container-fluid">
+        <div class="row" style="background-color: blue; color: ivory;">
+            <div class="col-md-4">
+                <h1 style="font-weight: bold;">STORE ADDRESS</h1>
+                <hr>
+                <h5 style="font-weight: bold;"><span class="glyphicon glyphicon-home"></span> MAIN RASHID MINHAS ROAD,KARACHI.</h5>
+                <br>
+                <h5 style="font-weight: bold;"><span class="glyphicon glyphicon-envelope"></span> UMAIRSPORTS282@GMAIL.COM</h5>
+                <br>
+                <h5 style="font-weight: bold;"><span class="glyphicon glyphicon-earphone"></span> +92317388990</h5>
+                <br>
+                <h5 style="font-weight: bold;"><span class="glyphicon glyphicon-phone-alt"></span> (021)345016680</h5>
+            </div>
+            <div class="col-md-4">
+                <h1 style="font-weight: bold;">USEFUL LINKS</h1>
+                <hr>
+                <span style="font-size: 100px; line-height: 50px;">&#10132</span>
+            </div>
+            <div class="col-md-4">
+                <h1 style="font-weight: bold;">SOCIAL MEDIA</h1>
+                <hr>
+                <i class="fa fa-facebook-square" style="font-size:36px"></i>
+                <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+                <i class="fa fa-twitter-square" style="font-size:36px"></i>
+                <i class="fa fa-whatsapp" style="font-size:36px"></i>
+                <i class="fa fa-google-plus" style="font-size:36px"></i>
+
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <!--lastfooter-->
+
+    <div class="container-fluid">
+        <div class="row" style="background-color: rgb(15, 15, 15);">
+            <div class="col-md-6" style="text-align: center;">
+                <p style="margin-top: 8px;  color: ivory;">Copyright &#169 material 2020</p>
+            </div>
+            <div class="col-md-6" style="text-align: center;">
+                <a href="#top" style="text-decoration: none;"><button style=" color: black;margin-top: 5px;  border-radius: 10px; font-size: larger;width: 100px; font-weight: bold; "><span class="glyphicon glyphicon-chevron-up"></span> TOP</button></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

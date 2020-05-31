@@ -1,0 +1,26 @@
+#listcolor:hover {
+    color: ivory;
+}
+
+#inner:hover {
+    background-color: rgb(247, 12, 12);
+    color: ivory;
+}
+
+.listcolor:hover {
+    color: ivory;
+}
+
+.navbar-brand {
+    position: relative;
+    top: 5px;
+}
+
+#box {
+    border: 1px solid lightgray;
+    background-color: rgb(235, 235, 235);
+}
+
+html {
+    scroll-behavior: smooth;
+}

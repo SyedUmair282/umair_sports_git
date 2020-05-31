@@ -1,0 +1,79 @@
+.qoute {
+    font-family: cursive;
+    font-weight: bold;
+    font-size: small;
+    font-style: italic;
+}
+
+#listcolor:hover {
+    color: ivory;
+}
+
+#inner:hover {
+    background-color: rgb(247, 12, 12);
+    color: ivory;
+}
+
+.listcolor:hover {
+    color: ivory;
+}
+
+.navbar-brand {
+    position: relative;
+    top: 5px;
+}
+
+.card {
+    border: 1px solid lightgray;
+    display: inline-block;
+    margin-left: 35px;
+    background-color: lightslategray;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.card-img-top {
+    width: 100%;
+}
+
+.btn-primary {
+    width: 100%;
+}
+
+@media screen and (max-width: 430px) {
+    .card {
+        margin-left: 70px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .card {
+        margin-left: 35px;
+    }
+}
+
+#sec {
+    display: inline-block !important;
+    margin-left: 150px;
+}
+
+@media screen and (max-width: 450px) {
+    #sec {
+        width: 80% !important;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    #sec {
+        margin-left: 30px;
+        width: 80% !important;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.card:hover {
+    box-shadow: 3px 3px 30px 8px lightseagreen;
+}
